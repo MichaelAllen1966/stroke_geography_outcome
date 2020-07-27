@@ -1,0 +1,128 @@
+Postcode,Hospital_name,Team type,Routinely admitting acute team,Strategic Clinical Network,Health Board / Trust,Stroke Team,Easting,Northing,IVT,Impute,Fixed
+RM70AG,RM70AG,Routinely admitting team,1,London SCN,Barking; Havering and Redbridge University Hospitals NHS Trust,"Queen's Hospital, Romford",551118,187780,14.4,0,2
+E11BB,E11BB,Routinely admitting team,1,London SCN,Barts Health NHS Trust,The Royal London Hospital,534829,181798,14.7,1,2
+SW66SX,SW66SX,Routinely admitting team,1,London SCN,Imperial College Healthcare NHS Trust,"Charing Cross Hospital, London",524226,176487,13.7,0,2
+SE59RW,SE59RW,Routinely admitting team,1,London SCN,King's College Hospital NHS Foundation Trust,"King's College Hospital, London",532536,176228,11.5,0,2
+BR68ND,BR68ND,Routinely admitting team,1,London SCN,King's College Hospital NHS Foundation Trust,Princess Royal University Hospital; Orpington,543443,165032,10.8,0,
+HA13UJ,HA13UJ,Routinely admitting team,1,London SCN,London North West Healthcare NHS Trust,"Northwick Park Hospital, Harrow",516376,187616,13.9,0,
+SW170QT,SW170QT,Routinely admitting team,1,London SCN,St George's Healthcare NHS Trust,"St George's Hospital, London",526925,171324,16.9,0,2
+NW12BU,NW12BU,Routinely admitting team,1,London SCN,University College London Hospitals NHS Foundation Trust,"University College London Hospital, London",529347,182309,16.2,0,2
+DE223NE,DE223NE,Routinely admitting team,1,East Midlands SCN,Derby Hospitals NHS Foundation Trust,Royal Derby Hospital,432746,334973,10.8,0,
+NN15BD,NN15BD,Routinely admitting team,1,East Midlands SCN,Northampton General Hospital NHS Trust,Northampton General Hospital,476319,260349,10.8,0,
+NG51PB,NG51PB,Routinely admitting team,1,East Midlands SCN,Nottingham University Hospitals NHS Trust,Nottingham City Hospital,456490,344070,11.7,0,2
+NG174JL,NG174JL,Routinely admitting team,1,East Midlands SCN,Sherwood Forest Hospitals NHS Foundation Trust,"Kings Mill Hospital, Mansfield",451460,359962,13.6,0,
+LN25QY,LN25QY,Routinely admitting team,1,East Midlands SCN,United Lincolnshire Hospitals NHS Trust,Lincoln County Hospital,498908,371749,16.3,0,
+PE219QS,PE219QS,Routinely admitting team,1,East Midlands SCN,United Lincolnshire Hospitals NHS Trust,"Pilgrim Hospital, Boston",533673,345607,13.8,0,
+LE15WW,LE15WW,Routinely admitting team,1,East Midlands SCN,University Hospitals of Leicester NHS Trust,Leicester Royal Infirmary,458660,303691,11.3,0,
+SS165NL,SS165NL,Routinely admitting team,1,East of England SCN,Basildon and Thurrock University Hospitals NHS Foundation Trust,Basildon University Hospital,569975,187156,13.5,0,
+MK429DJ,MK429DJ,Routinely admitting team,1,East of England SCN,Bedford Hospital NHS Trust,Bedford Hospital,504661,248873,7.4,1,-1
+CB20QQ,CB20QQ,Routinely admitting team,1,East of England SCN,Cambridge University Hospitals NHS Foundation Trust,"Addenbrooke's Hospital, Cambridge",546375,254988,15.7,0,2
+CO45JL,CO45JL,Routinely admitting team,1,East of England SCN,Colchester Hospital University NHS Foundation Trust,Colchester General Hospital,599511,227486,12.4,0,
+SG14AB,SG14AB,Routinely admitting team,1,East of England SCN,East and North Hertfordshire NHS Trust,"Lister Hospital, Stevenage",522999,226630,11,0,
+IP45PD,IP45PD,Routinely admitting team,1,East of England SCN,Ipswich Hospital NHS Trust,Ipswich Hospital,619336,244656,13,0,
+NR316LA,NR316LA,Routinely admitting team,1,East of England SCN,James Paget University Hospitals NHS Foundation Trust,"James Paget Hospitals, Great Yarmouth",652093,302477,11.3,0,
+LU40DZ,LU40DZ,Routinely admitting team,1,East of England SCN,Luton and Dunstable University Hospital NHS Foundation Trust,Luton and Dunstable Hospital,504961,222970,19.2,0,
+CM17ET,CM17ET,Routinely admitting team,1,East of England SCN,Mid Essex Hospital Services NHS Trust,"Broomfield Hospital, Chelmsford",570230,211319,12.8,0,
+NR47UY,NR47UY,Routinely admitting team,1,East of England SCN,Norfolk and Norwich University Hospitals NHS Foundation Trust,Norfolk and Norwich University Hospital,618143,307129,9.7,0,
+PE39GZ,PE39GZ,Routinely admitting team,1,East of England SCN,Peterborough and Stamford Hospitals NHS Foundation Trust,Peterborough City Hospital,516674,299847,9,0,
+PE304ET,PE304ET,Routinely admitting team,1,East of England SCN,Queen Elizabeth Hospital King's Lynn NHS Foundation Trust,"Queen Elizabeth Hospital, Kings Lynn",565228,320492,14.3,0,
+SS00RY,SS00RY,Routinely admitting team,1,East of England SCN,Southend University Hospital NHS Foundation Trust,Southend Hospital,586491,187309,16.8,0,
+WD180HB,WD180HB,Routinely admitting team,1,East of England SCN,West Hertfordshire Hospitals NHS Trust,Watford General Hospital,510505,195664,14.8,0,
+IP332QZ,IP332QZ,Routinely admitting team,1,East of England SCN,West Suffolk NHS Foundation Trust,"West Suffolk Hospital, Bury St Edmonds",585110,262732,6.9,0,
+DE130RB,DE130RB,Routinely admitting team,1,West Midlands SCN,Burton Hospitals NHS Foundation Trust,"Queens Hospital, Burton upon Trent",423255,324526,9.2,0,-1
+DY12HQ,DY12HQ,Routinely admitting team,1,West Midlands SCN,Dudley Group of Hospitals NHS Foundation Trust,"Russells Hall Hospital, Dudley",392052,289456,13.5,0,
+CV107DJ,CV107DJ,Routinely admitting team,1,West Midlands SCN,George Eliot Hospital NHS Trust,"George Eliot Hospital, Nuneaton",435493,290649,16.3,1,-1
+B95SS,B95SS,Routinely admitting team,1,West Midlands SCN,Heart of England NHS Foundation Trust,Birmingham Heartlands Hospital,411645,286935,10.9,0,
+WV100QP,WV100QP,Routinely admitting team,1,West Midlands SCN,Royal Wolverhampton NHS Trust,"New Cross Hospital, Wolverhampton",393625,300219,14.2,0,
+B714HJ,B714HJ,Routinely admitting team,1,West Midlands SCN,Sandwell and West Birmingham Hospitals NHS Trust,"Sandwell District Hospital, West Bromwich",400919,292165,8.8,0,
+TF16TF,TF16TF,Routinely admitting team,1,West Midlands SCN,Shrewsbury and Telford Hospital NHS Trust,"Princess Royal Hospital, Telford",365542,312839,11.8,0,
+CV345BW,CV345BW,Routinely admitting team,1,West Midlands SCN,South Warwickshire NHS Foundation Trust,Warwick Hospital,428507,265853,16.3,1,-1
+B152TH,B152TH,Routinely admitting team,1,West Midlands SCN,University Hospitals Birmingham NHS Foundation Trust,"Queen Elizabeth Hospital, Birmingham",404278,283916,10.6,0,2
+CV22DX,CV22DX,Routinely admitting team,1,West Midlands SCN,University Hospitals Coventry and Warwickshire NHS Trust,"University Hospital, Coventry",438289,280506,16.3,0,2
+ST46QG,ST46QG,Routinely admitting team,1,West Midlands SCN,University Hospitals of North Midlands NHS Trust,Royal Stoke University Hospital,385678,345211,14.5,0,2
+WS29PS,WS29PS,Routinely admitting team,1,West Midlands SCN,Walsall Healthcare NHS Trust,"Manor Hospital, Walsall",400170,298280,9.3,0,-1
+WR51DD,WR51DD,Routinely admitting team,1,West Midlands SCN,Worcestershire Acute Hospitals NHS Trust,"Worcestershire Royal Hospital, Worcester",387713,254788,9.6,0,
+HR12ER,HR12ER,Routinely admitting team,1,West Midlands SCN,Wye Valley NHS Trust,Hereford County Hospital,351710,240083,9.8,0,
+L97AL,L97AL,Routinely admitting team,1,Cheshire and Mersey SCN,Aintree University Hospitals NHS Foundation Trust,"University Hospital Aintree, Liverpool",338285,397024,9.6,1,2
+CH21UL,CH21UL,Routinely admitting team,1,Cheshire and Mersey SCN,Countess of Chester Hospital NHS Foundation Trust,"Countess of Chester Hospital, Chester",340130,368347,11.1,0,
+CW14QJ,CW14QJ,Routinely admitting team,1,Cheshire and Mersey SCN,Mid Cheshire Hospitals NHS Foundation Trust,"Leighton Hospital, Crewe",368248,357940,9.5,0,-1
+L78XP,L78XP,Routinely admitting team,1,Cheshire and Mersey SCN,Royal Liverpool and Broadgreen University Hospitals NHS Trust,Royal Liverpool University Hospital,335962,390733,10.7,0,
+PR86PN,PR86PN,Routinely admitting team,1,Cheshire and Mersey SCN,Southport and Ormskirk Hospital NHS Trust,Southport and Formby District General,335417,415683,11.4,0,
+L355DR,L355DR,Routinely admitting team,1,Cheshire and Mersey SCN,St Helens and Knowsley Teaching Hospitals NHS Trust,"Whiston Hospital, Prescot",347931,391806,18.3,0,
+WA51QG,WA51QG,Routinely admitting team,1,Cheshire and Mersey SCN,Warrington and Halton Hospitals NHS Foundation Trust,Warrington Hospital,359485,388745,7.5,1,-1
+CH495PE,CH495PE,Routinely admitting team,1,Cheshire and Mersey SCN,Wirral University Teaching Hospital NHS Foundation Trust,"Arrowe Park Hospital, Wirral",327162,386488,10.3,0,
+FY38NR,FY38NR,Routinely admitting team,1,Manchester; Lancashire & S.Cumbria SCN,Blackpool Teaching Hospitals NHS Foundation Trust,Blackpool Victoria Hospital,333194,436522,10.9,0,
+BB23HH,BB23HH,Routinely admitting team,1,Manchester; Lancashire & S.Cumbria SCN,East Lancashire Hospitals NHS Trust,Royal Blackburn Hospital,369574,426674,8.7,0,
+PR29HT,PR29HT,Routinely admitting team,1,Manchester; Lancashire & S.Cumbria SCN,Lancashire Teaching Hospitals NHS Foundation Trust,Royal Preston Hospital,353495,433014,8.5,0,2
+BL97TD,BL97TD,Routinely admitting team,1,Manchester; Lancashire & S.Cumbria SCN,Pennine Acute Hospitals NHS Trust,"Fairfield General Hospital, Bury",383200,411579,10,0,
+M68HD,M68HD,Routinely admitting team,1,Manchester; Lancashire & S.Cumbria SCN,Salford Royal NHS Foundation Trust,Salford Royal Hospital,378637,399030,10.5,0,2
+SK27JE,SK27JE,Routinely admitting team,1,Manchester; Lancashire & S.Cumbria SCN,Stockport NHS Foundation Trust,"Stepping Hill Hospital, Stockport",391316,387445,11.5,0,
+LA144LF,LA144LF,Routinely admitting team,1,Manchester; Lancashire & S.Cumbria SCN,University Hospitals of Morecambe Bay NHS Foundation Trust,Furness General Hospital,321180,471847,4.6,0,
+LA14RP,LA14RP,Routinely admitting team,1,Manchester; Lancashire & S.Cumbria SCN,University Hospitals of Morecambe Bay NHS Foundation Trust,Royal Lancaster Infirmary,347775,461064,7,0,
+SR47TP,SR47TP,Routinely admitting team,1,North of England SCN,City Hospitals Sunderland NHS Foundation Trust,Sunderland Royal Hospital,437866,556641,9.6,0,
+DH15TW,DH15TW,Routinely admitting team,1,North of England SCN,County Durham and Darlington NHS Foundation Trust,University Hospital of North Durham,426217,543809,12.9,0,
+NE96SX,NE96SX,Routinely admitting team,1,North of England SCN,Gateshead Health NHS Foundation Trust,"Queen Elizabeth Hospital, Gateshead",426956,560604,8.8,1,-1
+NE14LP,NE14LP,Routinely admitting team,1,North of England SCN,Newcastle upon Tyne Hospitals NHS Foundation Trust,"Royal Victoria Infirmary, Newcastle",424489,565063,14.2,0,2
+CA27HY,CA27HY,Routinely admitting team,1,North of England SCN,North Cumbria University Hospitals NHS Trust,"Cumberland Infirmary, Carlisle",338830,556086,12.5,0,
+CA288JG,CA288JG,Routinely admitting team,1,North of England SCN,North Cumbria University Hospitals NHS Trust,"West Cumberland Hospital, Whitehaven",298940,516115,7.2,0,-1
+TS198PE,TS198PE,Routinely admitting team,1,North of England SCN,North Tees and Hartlepool NHS Foundation Trust,University Hospitals of North Tees and Hartlepool,442265,521046,13.6,0,
+NE236NZ,NE236NZ,Routinely admitting team,1,North of England SCN,Northumbria Healthcare NHS Foundation Trust,"Northumbria Specialist Emergency Care Hospital, Cramlington",427587,575599,11.2,0,
+TS43BW,TS43BW,Routinely admitting team,1,North of England SCN,South Tees Hospitals NHS Foundation Trust,"James Cook University Hospital, Middlesbrough",450885,517673,12.6,0,2
+NE340PL,NE340PL,Routinely admitting team,1,North of England SCN,South Tyneside NHS Foundation Trust,South Tyneside District Hospital,436591,564288,13.5,1,-1
+S752EP,S752EP,Routinely admitting team,1,Yorkshire and The Humber SCN,Barnsley Hospital NHS Foundation Trust,Barnsley Hospital,433252,407062,5.4,1,-1
+BD96RJ,BD96RJ,Routinely admitting team,1,Yorkshire and The Humber SCN,Bradford Teaching Hospitals NHS Foundation Trust,Bradford Royal Infirmary,413618,434429,6.6,0,
+HX30PW,HX30PW,Routinely admitting team,1,Yorkshire and The Humber SCN,Calderdale and Huddersfield NHS Foundation Trust,"Calderdale Royal Hospital, Halifax",409504,423164,13.1,0,
+S445BL,S445BL,Routinely admitting team,1,Yorkshire and The Humber SCN,Chesterfield Royal Hospital NHS Foundation Trust,Chesterfield Royal Hospital,440141,371188,8.6,0,
+DN25LT,DN25LT,Routinely admitting team,1,Yorkshire and The Humber SCN,Doncaster and Bassetlaw Hospitals NHS Foundation Trust,Doncaster Royal Infirmary,459143,404157,8.5,0,
+HG27SX,HG27SX,Routinely admitting team,1,Yorkshire and The Humber SCN,Harrogate and District NHS Foundation Trust,Harrogate District Hospital,431726,455415,10.6,0,-1
+HU32JZ,HU32JZ,Routinely admitting team,1,Yorkshire and The Humber SCN,Hull and East Yorkshire Hospitals NHS Trust,Hull Royal Infirmary,508378,428777,9.7,0,2
+LS13EX,LS13EX,Routinely admitting team,1,Yorkshire and The Humber SCN,Leeds Teaching Hospitals NHS Trust,Leeds General Infirmary;,429621,433998,10,0,2
+WF14DG,WF14DG,Routinely admitting team,1,Yorkshire and The Humber SCN,Mid Yorkshire Hospitals NHS Trust,"Pinderfields Hospital, Wakefield",433870,421896,13.2,0,
+DN157BH,DN157BH,Routinely admitting team,1,Yorkshire and The Humber SCN,Northern Lincolnshire and Goole Hospitals NHS Foundation Trust,Scunthorpe General Hospital,488297,410936,6.6,0,
+S602UD,S602UD,Routinely admitting team,1,Yorkshire and The Humber SCN,Rotherham NHS Foundation Trust,Rotherham General Hospital,443775,390997,4.3,0,-1
+S102JF,S102JF,Routinely admitting team,1,Yorkshire and The Humber SCN,Sheffield Teaching Hospitals NHS Foundation Trust,"Royal Hallamshire Hospital, Sheffield",433803,386953,7.9,0,2
+YO318HE,YO318HE,Routinely admitting team,1,Yorkshire and The Humber SCN,York Teaching Hospital NHS Foundation Trust,York Hospital,460168,452930,12.2,0,
+KT160PZ,KT160PZ,Routinely admitting team,1,South East SCN,Ashford and St Peter's Hospitals NHS Foundation Trust,"St Peter's Hospital, Chertsey",502611,165338,8.9,0,
+RH164EX,RH164EX,Routinely admitting team,1,South East SCN,Brighton and Sussex University Hospitals NHS Trust,"Princess Royal Hospital, Haywards Heath",534125,123035,12.4,1,-1
+BN25BE,BN25BE,Routinely admitting team,1,South East SCN,Brighton and Sussex University Hospitals NHS Trust,"Royal Sussex County Hospital, Brighton",532654,103901,10.6,0,2
+DA28DA,DA28DA,Routinely admitting team,1,South East SCN,Dartford and Gravesham NHS Trust,"Darent Valley Hospital, Dartford",557094,173081,10.6,0,
+CT13NG,CT13NG,Routinely admitting team,1,South East SCN,East Kent Hospitals University NHS Foundation Trust,Kent and Canterbury Hospital,615456,156464,12.3,1,-1
+CT94AN,CT94AN,Routinely admitting team,1,South East SCN,East Kent Hospitals University NHS Foundation Trust,"Queen Elizabeth the Queen Mother Hospital, Margate",635967,169786,14.4,0,
+TN240LZ,TN240LZ,Routinely admitting team,1,South East SCN,East Kent Hospitals University NHS Foundation Trust,"William Harvey Hospital, Ashford",604090,142068,13.8,0,
+BN212UD,BN212UD,Routinely admitting team,1,South East SCN,East Sussex Healthcare NHS Trust,Eastbourne District General Hospital,560184,101058,9,0,
+KT187EG,KT187EG,Routinely admitting team,1,South East SCN,Epsom and St Helier University Hospitals NHS Trust,Epsom Hospital,520413,159906,3.9,0,
+GU167UJ,GU167UJ,Routinely admitting team,1,South East SCN,Frimley Health NHS Foundation Trust,Frimley Park Hospital,487761,158591,14.1,0,
+ME169QQ,ME169QQ,Routinely admitting team,1,South East SCN,Maidstone and Tunbridge Wells NHS Trust,Maidstone District General Hospital,573362,155654,8.6,0,
+TN24QJ,TN24QJ,Routinely admitting team,1,South East SCN,Maidstone and Tunbridge Wells NHS Trust,Tunbridge Wells Hospital,561472,141407,10.2,0,-1
+ME75NY,ME75NY,Routinely admitting team,1,South East SCN,Medway NHS Foundation Trust,"Medway Maritime Hospital, Gillingham",577004,167601,10.2,0,
+GU27XX,GU27XX,Routinely admitting team,1,South East SCN,Royal Surrey County Hospital NHS Foundation Trust,"Royal Surrey County Hospital, Guildford",497304,150014,13.4,1,-1
+RH15RH,RH15RH,Routinely admitting team,1,South East SCN,Surrey and Sussex Healthcare NHS Trust,"East Surrey Hospital, Redhill",528458,148271,9,0,
+PO196SE,PO196SE,Routinely admitting team,1,South East SCN,Western Sussex Hospitals NHS Trust,"St Richards Hospital, Chichester",486835,105615,8.5,0,
+BN112DH,BN112DH,Routinely admitting team,1,South East SCN,Western Sussex Hospitals NHS Trust,Worthing Hospital,515386,103181,17.1,0,
+GL13NN,GL13NN,Routinely admitting team,1,South West SCN,Gloucestershire Hospitals NHS Foundation Trust,"Gloucestershire Royal Hospital, Gloucester",384117,218670,11,0,
+SN36BB,SN36BB,Routinely admitting team,1,South West SCN,Great Western Hospitals NHS Foundation Trust,"Great Western Hospital, Swindon",419017,182216,11.3,0,
+BS105NB,BS105NB,Routinely admitting team,1,South West SCN,North Bristol NHS Trust,North Bristol Hospital NHS Trust,358934,177759,13.2,0,2
+EX314JB,EX314JB,Routinely admitting team,1,South West SCN,Northern Devon Healthcare NHS Trust,"North Devon District Hospital, Barnstaple",256506,134540,5.7,0,
+PL68DH,PL68DH,Routinely admitting team,1,South West SCN,Plymouth Hospitals NHS Trust,"Derriford Hospital, Plymouth",249930,59564,9.1,0,2
+TR13LQ,TR13LQ,Routinely admitting team,1,South West SCN,Royal Cornwall Hospitals NHS Trust,"Royal Cornwall Hospital, Truro",179581,45313,7.9,0,
+EX25DW,EX25DW,Routinely admitting team,1,South West SCN,Royal Devon and Exeter NHS Foundation Trust,Royal Devon and Exeter Hospital,293730,91869,11,0,
+BA13NG,BA13NG,Routinely admitting team,1,South West SCN,Royal United Hospital Bath NHS Trust,Royal United Hospital Bath,372876,165920,10,0,
+SP28BJ,SP28BJ,Routinely admitting team,1,South West SCN,Salisbury NHS Foundation Trust,Salisbury District Hospital,414831,127198,7.7,0,
+TA15DA,TA15DA,Routinely admitting team,1,South West SCN,Taunton and Somerset NHS Foundation Trust,"Musgrove Park Hospital, Tautnon",321550,124217,10.6,0,
+TQ27AA,TQ27AA,Routinely admitting team,1,South West SCN,Torbay and South Devon NHS Foundation Trust,Torbay Hospital,289857,65876,10.8,0,
+BS28HW,BS28HW,Routinely admitting team,1,South West SCN,University Hospitals Bristol NHS Foundation Trust,Bristol Royal Infirmary,358773,173521,9.2,0,
+BS234TQ,BS234TQ,Routinely admitting team,1,South West SCN,Weston Area Health NHS Trust,"Weston General Hospital, Weston-super-Mare",332406,158585,6.3,0,
+BA214AT,BA214AT,Routinely admitting team,1,South West SCN,Yeovil District Hospital NHS Foundation Trust,Yeovil District Hospital,355505,116348,19,0,
+HP112TT,HP112TT,Routinely admitting team,1,Thames Valley SCN,Buckinghamshire Healthcare NHS Trust,"Wycombe General Hospital, High Wycombe",486386,192694,12.7,0,
+SL24HL,SL24HL,Routinely admitting team,1,Thames Valley SCN,Frimley Health NHS Foundation Trust,"Wexham Park Hospital, Slough",499011,182419,12.7,1,-1
+MK65LD,MK65LD,Routinely admitting team,1,Thames Valley SCN,Milton Keynes University Hospital NHS Foundation Trust,Milton Keynes General Hospital,486835,237194,6.9,0,
+OX169AL,OX169AL,Routinely admitting team,1,Thames Valley SCN,Oxford University Hospitals NHS Foundation Trust,"Horton General Hospital, Banbury",445545,239765,17.3,1,-1
+OX39DU,OX39DU,Routinely admitting team,1,Thames Valley SCN,Oxford University Hospitals NHS Foundation Trust,"John Radcliffe Hospital, Oxford",453940,207531,17.3,0,2
+RG15AN,RG15AN,Routinely admitting team,1,Thames Valley SCN,Royal Berkshire NHS Foundation Trust,"Royal Berkshire Hospital, Reading",472411,172962,22,0,
+DT12JY,DT12JY,Routinely admitting team,1,Wessex SCN,Dorset County Hospital NHS Foundation Trust,"Dorset County Hospital, Dorchester",368541,90463,10.9,0,
+SO225DG,SO225DG,Routinely admitting team,1,Wessex SCN,Hampshire Hospitals NHS Foundation Trust,"Royal Hampshire County Hospital, Winchester",447107,129366,8.1,0,
+PO305TG,PO305TG,Routinely admitting team,1,Wessex SCN,Isle of Wight NHS Trust,"St Mary's Hospital, Newport",449427,90367,5.6,0,
+BH152JB,BH152JB,Routinely admitting team,1,Wessex SCN,Poole Hospital NHS Foundation Trust,Poole Hospital,401994,91374,6.5,0,-1
+PO63LY,PO63LY,Routinely admitting team,1,Wessex SCN,Portsmouth Hospitals NHS Trust,"Queen Alexandra Hospital, Portsmouth",465570,106054,16.2,0,
+BH77DW,BH77DW,Routinely admitting team,1,Wessex SCN,Royal Bournemouth and Christchurch Hospitals NHS Foundation Trust,Royal Bournemouth Hospital,412759,94224,10.1,0,
+SO166YD,SO166YD,Routinely admitting team,1,Wessex SCN,University Hospital Southampton NHS Foundation Trust,Southampton General Hospital,439793,114993,16.1,0,2
