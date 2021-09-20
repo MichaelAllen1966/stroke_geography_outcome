@@ -1,6 +1,56 @@
 """
 Class to hold clinical outcome model.
+Predicts probability of good outcome of patient(s) or group(s) of patients.
 
+Call `calculate_outcome_for_all(args)` from outside of the object
+
+Inputs
+======
+
+All inputs take np arrays (for multiple groups of patients).
+
+mimic: proportion of patients with stroke mimic
+
+ich: proportion of patients with intracerebral haemorrhage (ICH). 
+Or probability of a patient having an ICH, when using for a single patient.
+
+nlvo: proportion of patients with non-large vessel occlusions (nLVO). 
+Or probability of a patient having an NLVO, when using for a single patient.
+
+lvo: proportion of patients with large vessel occlusions (LVO). 
+Or probability of a patient having a LVO, when using for a single patient.
+
+onset_to_needle: minutes from onset to thrombolysis
+
+onset_to_ouncture: minutes from onset to thrombectomy
+
+nlvo_eligible_for_treatment: proportion of patients with NLVO suitable for 
+treatment with thrombolysis. Or probability of a patient with NVLO being 
+eligible for treatment.
+
+lvo_eligible_for_treatment: proportion of patients with LVO suitable for 
+treatment with thrombolysis and/or thrombectomy. Or probability of a patient 
+with LVO being eligible for treatment.
+
+Returns
+=======
+
+Probability of good outcome: The probability of having a good outcome (modified
+Rankin Scale 0-1) for the patient or group of patients (np array).
+
+
+References for decay of effect of thrombolysis and thrombectomy
+===============================================================
+
+Decay of effect of thrombolysis without image selection of patients taken from:
+Emberson, Jonathan, Kennedy R. Lees, Patrick Lyden, Lisa Blackwell, 
+Gregory Albers, Erich Bluhmki, Thomas Brott, et al (2014). “Effect of Treatment 
+Delay, Age, and Stroke Severity on the Effects of Intravenous Thrombolysis with
+Alteplase for Acute Ischaemic Stroke: A Meta-Analysis of Individual Patient
+Data from Randomised Trials.” The Lancet 384: 1929–1935.
+https://doi.org/10.1016/S0140-6736(14)60584-5.
+
+* Time to no effect = 6.3hrs
 
 Decay of effect of thrombectomy without image selection of patients taken from:
 Fransen, Puck S. S., Olvert A. Berkhemer, Hester F. Lingsma, Debbie Beumer, 
@@ -10,17 +60,6 @@ Randomized Clinical Trial.” JAMA Neurology 73: 190–96.
 https://doi.org/10.1001/jamaneurol.2015.3886.
 
 * Time to no effect = 8hrs
-
-Decay of effect of thrombolysis without image selection of patients taken from:
-Emberson, Jonathan, Kennedy R. Lees, Patrick Lyden, Lisa Blackwell, 
-Gregory Albers, Erich Bluhmki, Thomas Brott, et al (2014). “Effect of Treatment 
-Delay, Age, and Stroke Severity on the Effects of Intravenous Thrombolysis with
-Alteplase for Acute Ischaemic Stroke: A Meta-Analysis of Individual Patient
-Data from Randomised Trials.” The Lancet 384: 1929–1935.
-https://doi.org/10.1016/S0140-6736(14)60584-5.
-* Time to no effect = 6.3hrs
-
-
 """
 
 import numpy as np
@@ -67,7 +106,7 @@ class Clinical_outcome:
         arguments
         ---------
 
-        numpy arrays (each row is a given geographic area with different 
+        np arrays (each row is a given geographic area with different 
         characteristics)
 
         mimic: proportion of patients with stroke mimic
@@ -82,7 +121,7 @@ class Clinical_outcome:
         returns
         -------
 
-        probability of good outcome for all (numpy array)
+        probability of good outcome for all (np array)
         """
         
         # Get outcomes
@@ -91,11 +130,11 @@ class Clinical_outcome:
         outcomes = pd.DataFrame()
 
         # Calculate good outcomes for mimics
-        outcomes['mimic'] = self.calculate_outcome_for_stroke_mimics(
+        outcomes['mimic'] = self._calculate_outcome_for_stroke_mimics(
             mimic.shape)
 
         # Calculate good outcomes for ich   
-        outcomes['ich']  = self.calculate_outcome_for_ICH(mimic.shape)
+        outcomes['ich']  = self._calculate_outcome_for_ICH(mimic.shape)
 
         # Calculate good outcomes for nlvo without treatment
         outcomes['nlvo_base'] = \
@@ -103,7 +142,7 @@ class Clinical_outcome:
             
         # Calculate good outcomes for nlvo with thrombolysis
         outcomes['nlvo_add_ivt'] = \
-            self.calculate_thrombolysis_outcome_for_nlvo(onset_to_needle)
+            self._calculate_thrombolysis_outcome_for_nlvo(onset_to_needle)
 
         # Calculate good outcomes for lvo without treatment
         outcomes['lvo_base'] = \
@@ -111,11 +150,11 @@ class Clinical_outcome:
         
         # Calculate good outcomes for lvo with thrombolysis
         outcomes['lvo_add_ivt'] = \
-            self.calculate_thrombolysis_outcome_for_lvo(onset_to_needle)
+            self._calculate_thrombolysis_outcome_for_lvo(onset_to_needle)
 
         # Calculate good outcomes for lvo with thrombolysis
         outcomes['lvo_add_et'] = \
-            self.calculate_thrombectomy_outcome_for_lvo(onset_to_puncture)
+            self._calculate_thrombectomy_outcome_for_lvo(onset_to_puncture)
 
         
         # Weigth results by proportion of patients
@@ -140,9 +179,12 @@ class Clinical_outcome:
         
         results['lvo_ivt'] = \
             lvo * outcomes['lvo_add_ivt'] * lvo_eligible_for_treatment
-            
-        lvo_receiving_et = (lvo * lvo_eligible_for_treatment) - \
-            results['lvo_ivt'] * prop_thrombolysed_lvo_receiving_thrombectomy
+                
+        # Adjust thrombectomy/thrombolysis ratio for LVO   
+        # Reduce thrombectomy treatment by LVO responding to IVT
+        lvo_receiving_et = ((lvo * lvo_eligible_for_treatment * 
+            prop_thrombolysed_lvo_receiving_thrombectomy) - 
+            results['lvo_ivt'])
 
         results['lvo_et'] = lvo_receiving_et * outcomes['lvo_add_et']
 
@@ -151,7 +193,7 @@ class Clinical_outcome:
         return p_good
 
     @staticmethod
-    def calculate_outcome_for_ICH(array_shape):
+    def _calculate_outcome_for_ICH(array_shape):
         """
         Calculates the probability of good outcome for patients with intra-
         cranial haemorrhage (ICH).
@@ -170,17 +212,17 @@ class Clinical_outcome:
         returns
         -------
 
-        probability of good outcome for ICH (numpy array)
+        probability of good outcome for ICH (np array)
         """
 
         # Create an array of required length and set all values to 0.24
         p_good = np.zeros(array_shape)
         p_good[:] = 0.24
 
-        return p_good
+        return p_good        
 
     @staticmethod
-    def calculate_outcome_for_stroke_mimics(array_shape):
+    def _calculate_outcome_for_stroke_mimics(array_shape):
         """
         Calculates the probability of good outcome for patients with stroke
         mimic
@@ -199,7 +241,7 @@ class Clinical_outcome:
         returns
         -------
 
-        probability of good outcome for stroke mimiccs (numpy array)
+        probability of good outcome for stroke mimiccs (np array)
         """
 
         # Create an array of required length and set all values to 0.9
@@ -207,9 +249,8 @@ class Clinical_outcome:
         p_good[:] = 1
 
         return p_good
-
     
-    def calculate_thrombectomy_outcome_for_lvo(self, onset_to_puncture):
+    def _calculate_thrombectomy_outcome_for_lvo(self, onset_to_puncture):
         """
         Calculates the probability of additional good outcome for LVO patients
         receiving thrombectomy.
@@ -217,12 +258,12 @@ class Clinical_outcome:
         arguments
         ---------
 
-        onset_to_puncture : numpy array in minutes
+        onset_to_puncture : np array in minutes
 
         returns
         -------
 
-        probability of additional good outcome if given thrombectomy (numpy array)
+        probability of additional good outcome if given thrombectomy (np array)
         """
 
         p_good_max = 0.5208
@@ -256,9 +297,9 @@ class Clinical_outcome:
         mask = p_good_add < 0
         p_good_add[mask] = 0  
 
-        return p_good_add
+        return p_good_add        
 
-    def calculate_thrombolysis_outcome_for_lvo(self, onset_to_needle):
+    def _calculate_thrombolysis_outcome_for_lvo(self, onset_to_needle):
         """
         Calculates the probability of additional good outcome for LVO patients
         receiving thrombolysis. Does not include baseline untreated good
@@ -267,14 +308,14 @@ class Clinical_outcome:
         arguments
         ---------
         
-        onset_to_needle : numpy array in minutes
+        onset_to_needle : np array in minutes
 
 
         returns
         -------
 
         probability of additional good outcome if given thrombolysis 
-        (numpy array)
+        (np array)
         """
         
         p_good_max = 0.2441
@@ -311,8 +352,7 @@ class Clinical_outcome:
         # return outcome and proportion of treated who respond
         return p_good_add
 
-
-    def calculate_thrombolysis_outcome_for_nlvo(self, onset_to_needle):
+    def _calculate_thrombolysis_outcome_for_nlvo(self, onset_to_needle):
         """
         Calculates the probability of good outcome for non-LVO patients
         receiving thrombolysis.
@@ -320,12 +360,12 @@ class Clinical_outcome:
         arguments
         ---------
 
-        onset_to_needle : numpy array in minutes
+        onset_to_needle : np array in minutes
 
         returns
         -------
 
-        probability of good outcome if given thrombolysis (numpy array)
+        probability of good outcome if given thrombolysis (np array)
         """
 
         p_good_max = 0.6444
